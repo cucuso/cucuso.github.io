@@ -8,36 +8,36 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" />
     <title>WAGDIE Generator</title>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="donate">
-            If you felt inspired, and that inspiration made you want to give away some 
-            NFTs. Feel free to send them my way! <strong>cucuso.eth</strong> &#128516;
-          </div>
+        <div class="donate text-center">
+          <a href="https://twitter.com/cucus0" target="_blank">
+            <img src="img/twitter.png"/>
+            <br>
+            <strong>cucuso.eth</strong>
+          </a>
+        </div>
         <div class="offset-md-4 col-md-4 offset-md-4 lore-button text-center">
-            <button class="button-19" id="GetLore">Get Inspiration</button>
-          </div>
+          <button class="button-19" id="GetLore">Get Inspiration</button>
+        </div>
 
         <div class="offset-md-3 col-md-6 offset-md-3 lore">
-            <div id="lore"></div>
-          </div>
-
-
+          <div id="lore"></div>
+        </div>
       </div>
     </div>
   </body>
 
   <script>
-  $(document).ready(function () {
-        
-    $('#GetLore').click(function () {
-            generateRandomLore();
-        });
+    $(document).ready(function () {
+      $('#GetLore').click(function () {
+        generateRandomLore();
       });
+    });
 
     function generateRandomLore() {
       var rawFile = new XMLHttpRequest();

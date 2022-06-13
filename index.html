@@ -14,7 +14,10 @@
   <body>
     <div class="container">
       <div class="row">
-
+        <div class="donate">
+            If you felt inspired, and that inspiration made you want to give away some 
+            NFTs. Feel free to send them my way! <strong>cucuso.eth</strong> &#128516;
+          </div>
         <div class="offset-md-4 col-md-4 offset-md-4 lore-button text-center">
             <button class="button-19" id="GetLore">Get Inspiration</button>
           </div>
@@ -43,7 +46,7 @@
         if (rawFile.readyState === 4) {
           if (rawFile.status === 200 || rawFile.status == 0) {
             var allText = rawFile.responseText;
-            var random = Math.floor(Math.random() * 4154 + 1);
+            var random = Math.floor(Math.random() * 4152 + 1);
             var lines = allText.split('\n');
 
             let ele = document.getElementById('lore');
